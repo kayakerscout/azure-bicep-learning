@@ -1,0 +1,21 @@
+# connect to Azure
+az login
+
+# if not default subscription, select subscription to deploy to
+az account list
+az account set --subscription NAMEorIDofSUBSCRIPTION
+
+# verify subscription
+az account show
+
+# create resource group, if needed
+az group create --name YourResourceGroupName --location YourLocation
+
+# deploy template, keeping deployment parameters in separate file for later reuse
+az deployment group create --resource-group YourResourceGroupName --template-file keyvault-main.bicep --parameters keyvault-create.parameters.json --parameters keyvault-populate.parameters.json
+
+# delete resource group
+az group delete --resource-group YourResourceGroupName
+# purge keyvault from the soft-deleted state, otherwise can not deploy again until aged out
+az keyvault list-deleted
+az keyvault purge --name 'KeyVaultName'
