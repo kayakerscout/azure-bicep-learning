@@ -22,4 +22,12 @@ needed/desired.
 
 Goal is for this example to be deployable via portal
 interface with cloud shell usage if required.
+
+## Additional Resources
+- [Azure Deployment Scripts - Run any action you want as part of a template!](https://youtu.be/c4hTBTWyA_w) - [John Savill's YouTube Channel](https://www.youtube.com/@NTFAQGuy)
+- [Generate SAS Tokens in ARM Templates](https://samcogan.com/generate-sas-tokens-in-arm-teamplates/) - Sam Cogan
+- [Bicep Documentation, Resource functions for Bicep, list*](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-resource#list) - Microsoft Learn
+- [Azure REST API reference, Storage Accounts - List Account SAS](https://learn.microsoft.com/en-us/rest/api/storagerp/storage-accounts/list-account-sas?tabs=HTTP) - Microsoft Learn
+- [Bicep Documentation, Date functions for Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-date) - Microsoft Learn
+
 ## Usage
